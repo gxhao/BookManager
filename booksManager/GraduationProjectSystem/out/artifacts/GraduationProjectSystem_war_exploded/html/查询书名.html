@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购书单</title>
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+		<script src="./js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<style type="text/css">
+			.title{
+				text-align: center;
+				position: absolute;
+				top: 0;
+				left: 500px;
+				/* opacity:0.2; */
+				color: darkgoldenrod;
+				font-family: 楷体;
+				font-size: 100px;
+			}
+			.firstpage{
+				width: 100%;
+				height:800px;
+				background-image: url(./img/page.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+				/* position: absolute;
+				left: 300px;
+				top: 100px; */
+			}
+			.content{
+				position: absolute;
+				
+				left: 500px;
+				width: 700px;
+				text-align: center;
+			}
+			table{
+				position: absolute;
+				top: 150px;
+			}
+			form{
+				position: absolute;
+				top: 200px;
+			}
+			input{
+				position: relative;
+				left: 00px;
+				top: 200px;
+				
+			}
+			label{
+				position: absolute;
+				top: 150px;
+				left: 0px;
+				font-size: 22px;
+				font-family: 华文行楷;
+			}
+			#check{
+				position: absolute;
+				top: 10px;
+				left: -27px;
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="firstpage">
+			<div class="page-header title">
+			  <h1>查询图书 <small>Add Books</small></h1>
+			</div>
+			<div class="content">
+				<!-- 表格 -->
+				<table class="table table-hover " style="font-size: 18px;">
+						<tr>
+							<th>
+								全选
+								<input type="checkbox" name="check" id="check" value="xxxx" />
+							</th>
+							<th>
+								图书名称
+							</th>
+							<th>
+								作者
+							</th>
+							<th>
+								出版社
+							</th>
+							<th>
+								价格
+							</th>
+							<th>
+								编码
+							</th>
+							<th>
+								删除
+							</th>
+						</tr>
+						<tr>
+							<td>
+								
+							</td>
+						</tr>
+						
+				</table>
+				<form action="" method="" id="buy">
+					<button type="submit" class="btn btn-primary btn-lg btn-block"style="position: relative;top: 450px;left: 550px;">立即提交</button>
+					
+					
+				</form>
+				
+				 
+				</form>
+				<!-- 分页 -->
+				<nav aria-label="Page navigation" style="position: absolute; top: 700px; left: 50px;">
+				  <ul class="pagination">
+				    <li>
+				      <a href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				      </a>
+				    </li>
+				    <li><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+				    <li><a href="#">7</a></li>
+				    <li><a href="#">8</a></li>
+				    <li><a href="#">9</a></li>
+				    <li><a href="#">10</a></li>
+				    <li>
+				      <a href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				      </a>
+				    </li>
+					<button type="button" class="btn btn-primary">返回上一页</button>
+				  </ul>
+				  
+				</nav>
+				
+			</div>
+		</div>
+	</body>
+</html>
+

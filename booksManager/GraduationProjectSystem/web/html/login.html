@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录页</title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<script src="../js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<style type="text/css">	
+			form{
+				float: right;
+				position: absolute;
+				top: 300px;
+				left: 900px;
+			}
+			form input[type='radio']{
+				margin: 0px 10px 0px 10px;
+				color: white;
+			}
+			h1{
+				text-align: center;
+				position: absolute;
+				top: 80px;
+				left: 300px;
+				/* opacity:0.2; */
+				color: darkgoldenrod;
+				font-family: 楷体;
+				font-size: 100px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="">
+		  <h1 >基于JSP图书管理系统</h1>
+		</div>
+		<div id="image">
+			<img src="../img/index.jpg" class="img-responsive login" alt="Responsive image">
+		</div>
+		<div id="login">
+			<div id="content" class="container">
+				<form style="color: wheat;" method="post" action="http://localhost:8080/GraduationProjectSystem/login">
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email address</label>
+						<input class="form-control" id="exampleInputEmail1" placeholder="Email" name="username">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+					</div>
+					<!-- <div class="form-group">
+					<label for="exampleInputFile">File input</label>
+					<input type="file" id="exampleInputFile">
+					<p class="help-block">Example block-level help text here.</p>
+				</div> -->
+					<div class="checkbox">
+						<label style="color: wheat;">
+							<input type="radio" name="user"> 管理员
+							<input type="radio" name="user"> 学生
+						</label>
+					</div>
+					<button type="submit" class="btn btn-default" style="width: 300px;">登录</button>
+					
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
